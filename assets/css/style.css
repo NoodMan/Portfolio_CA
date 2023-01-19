@@ -1,0 +1,161 @@
+/* MOBILE MENU MOBILE */
+
+#mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+  }
+  
+  #menu-buttons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #ffb8b8;
+    font-size: 2em;
+    width: 40px;
+    margin: 15px 15px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  #cross {
+    display: none;
+  }
+  
+  #menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  #menu ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 50px 0px;
+    vertical-align: middle;
+  }
+  
+  #menu ul li {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  #menu ul li:last-child {
+    border-bottom: 0px;
+  }
+  
+  #menu ul li a {
+    color: #ffb8b8;
+    text-decoration: none;
+  }
+  
+  /* MENU */
+  nav {
+      display: none;
+    }
+  
+    #mobile-nav {
+      display: block;
+    }
+  
+    #hamburger,
+    #cross {
+      cursor: pointer;
+    }
+    /* end menu */
+  
+  
+  
+  /* end mobile menu */
+  
+  
+  
+  
+          /* ABOUT */
+          .item.box1 {
+              display: none;
+          }
+  
+          .box2 p {
+  
+              padding: 10px 0px;
+              line-height: 30px;
+          }
+  
+          .box3.img-container {
+              float: left;
+              width: 21%;
+              margin-right: 25px;
+              margin-left: 20px;
+              margin-top: 20px;
+              border: 4mm ridge rgba(255, 255, 255, 0.822)!important;
+          }
+  
+          .box3.about-list {
+              line-height: 1.6em;
+              font-size: 0.8em;
+          }
+  
+          .box3 p.item {
+              width: 60%;
+              font-size: 0.8em;
+              vertical-align: top;
+              text-align: left;
+              padding: 0px;
+          }
+  
+          .box3 {
+              display: inline;
+          }
+  
+  
+          /* pour ma tete reste derriere mon avatar */
+          .img-container {
+              position: relative;
+          }
+  
+          .img-overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              opacity: 0;
+              transition: 0.5s ease;
+              width: 100%;
+              height: 100%;
+          }
+  
+          .img-container:hover .img-overlay {
+              opacity: 1;
+          }
+  
+          .align {
+              text-align: center;
+              line-height: 3em;
+          }
+  
+          /* pour les button in cv contact me */
+          button#cont {
+              background-color: #3fa8fd;
+              border-radius: 20px;
+          }
+  
+          button#cv {
+              background-color: #2fdc9c;
+              border-radius: 20px;
+          }
+  
+          .align {
+              justify-content: center;
+          }
+  
+          /* end about */
+   
