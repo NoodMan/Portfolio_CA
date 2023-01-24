@@ -1,6 +1,193 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import 'https://fonts.googleapis.com/css?family=Allura|Merriweather+Sans:400,700,800';
 
+
+/* MOBILE MENU MOBILE */
+
+#mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    color: #ff0000;
+}
+
+#menu-buttons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #ff0000;
+    font-size: 2em;
+    width: 40px;
+    margin: 15px 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+#cross {
+    display: none;
+}
+
+#menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#menu ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 50px 0px;
+    vertical-align: middle;
+}
+
+#menu ul li {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menu ul li:last-child {
+    border-bottom: 0px;
+}
+
+#menu ul li a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* MENU */
+nav {
+    display: none;
+}
+
+
+
+#mobile-nav {
+    display: block;
+}
+
+#hamburger,
+#cross {
+    cursor: pointer;
+
+}
+@media (max-width: 991px) {
+    #hamburger {
+      display: none;
+    }
+  }
+
+/* end menu */
+
+
+
+/* end mobile menu */
+
+
+
+
+/* ABOUT */
+.item.box1 {
+    display: none;
+}
+
+.box2 p {
+
+    padding: 10px 0px;
+    line-height: 30px;
+}
+
+.box3.img-container {
+    float: left;
+    width: 21%;
+    margin-right: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 4mm ridge rgba(255, 255, 255, 0.822) !important;
+}
+
+.box3.about-list {
+    line-height: 1.6em;
+    font-size: 0.8em;
+}
+
+.box3 p.item {
+    width: 60%;
+    font-size: 0.8em;
+    vertical-align: top;
+    text-align: left;
+    padding: 0px;
+}
+
+.box3 {
+    display: inline;
+}
+
+
+/* pour ma tete reste derriere mon avatar */
+.img-container {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+.align {
+    text-align: center;
+    line-height: 3em;
+}
+
+/* pour les button in cv contact me */
+button#cont {
+    background-color: #3fa8fd;
+    border-radius: 20px;
+}
+
+button#cv {
+    background-color: #2fdc9c;
+    border-radius: 20px;
+}
+
+/*pour l'espacement du text qui je suis */
+.align {
+    align-content: center;
+    margin-block: 15px;
+}
+
+#buttons-container {
+    margin-block: 100px;
+    justify-content: center;
+}
+
+/* end about */
+
+
+
+
+
+
+
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -73,7 +260,7 @@ h1 {
 }
 
 mark {
-    background: #ff0;
+    background: rgb(255, 255, 255);
     color: #000
 }
 
@@ -894,10 +1081,15 @@ input[type="button"]:focus {
     display: block
 }
 
+.introduction__content-el--job {
+    display: block
+}
+
 .introduction__content-el--name {
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
-    opacity: 0
+    opacity: 0;
+    font-size: 30px;
 }
 
 .introduction__content-el--description {
@@ -905,18 +1097,96 @@ input[type="button"]:focus {
     transform: matrix(1.0110731102, 0, 0, 1.0110731102, 0, 0);
     margin: 10px 0;
     color: #fff;
-    font-size: 16vw;
+    font-size: 10vw;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23)
+    text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23);
+    padding: 20px;
 }
 
 .introduction__content-el--job {
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
     text-align: right;
-    opacity: 0
+    opacity: 0;
+    font-size: 40px;
 }
+
+#section05 a {
+  padding-top: 70px;
+}
+#section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+
+  }
+
+  #section05 a span {
+    border-left-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+  }
+
+  .demo a:hover {
+    opacity: .5;
+  }
+  /*pour les icones front back... */ 
+  .space-between {
+    font-size: 30px;
+    display: flex;
+    text-align: justify;
+}
+
 
 .introduction__arrow {
     position: absolute;
@@ -936,7 +1206,8 @@ input[type="button"]:focus {
     }
 
     .introduction__content-el--description {
-        font-size: 140px
+        font-size: 140px;
+        padding: 20px;
     }
 }
 
@@ -983,7 +1254,9 @@ input[type="button"]:focus {
     position: absolute;
     left: 45px;
     bottom: 0;
-    z-index: 2
+    z-index: 2;
+    width: 300px;
+    height: 500px;
 }
 
 .about__content {
